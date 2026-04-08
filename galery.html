@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-error": "#ffffff",
+            "surface-container-high": "#ebe8e3",
+            "inverse-on-surface": "#f3f0eb",
+            "secondary-container": "#fed7ca",
+            "secondary-fixed": "#ffdbce",
+            "on-secondary": "#ffffff",
+            "tertiary-fixed": "#e5e2e1",
+            "secondary": "#75584d",
+            "surface-tint": "#755750",
+            "tertiary": "#181818",
+            "on-secondary-fixed-variant": "#5b4137",
+            "tertiary-fixed-dim": "#c8c6c5",
+            "secondary-fixed-dim": "#e4beb2",
+            "primary-container": "#3f2721",
+            "on-primary-container": "#af8c84",
+            "surface-bright": "#fcf9f4",
+            "surface-variant": "#e5e2dd",
+            "on-secondary-fixed": "#2b160f",
+            "on-tertiary": "#ffffff",
+            "on-surface": "#1c1c19",
+            "on-primary-fixed-variant": "#5c403a",
+            "surface-dim": "#dcdad5",
+            "surface-container-highest": "#e5e2dd",
+            "primary-fixed-dim": "#e5beb5",
+            "primary": "#27130e",
+            "on-tertiary-fixed-variant": "#474746",
+            "inverse-primary": "#e5beb5",
+            "surface-container": "#f0ede9",
+            "surface": "#fcf9f4",
+            "inverse-surface": "#31302d",
+            "on-tertiary-container": "#969494",
+            "on-background": "#1c1c19",
+            "on-surface-variant": "#504442",
+            "surface-container-low": "#f6f3ee",
+            "error": "#ba1a1a",
+            "on-tertiary-fixed": "#1b1b1b",
+            "on-secondary-container": "#795c51",
+            "on-primary": "#ffffff",
+            "tertiary-container": "#2d2d2d",
+            "on-error-container": "#93000a",
+            "primary-fixed": "#ffdad2",
+            "on-primary-fixed": "#2b1611",
+            "outline": "#827472",
+            "error-container": "#ffdad6",
+            "background": "#fcf9f4",
+            "outline-variant": "#d3c3c0",
+            "surface-container-lowest": "#ffffff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "fontFamily": {
+            "headline": ["Noto Serif"],
+            "body": ["Manrope"],
+            "label": ["Manrope"]
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Manrope', sans-serif;
+      background-color: #fcf9f4;
+    }
+
+    .font-serif {
+      font-family: 'Noto Serif', serif;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+</head>
+
+<body class="bg-surface text-on-surface">
+  <!-- Top Navigation Bar -->
+  <nav
+    class="fixed top-0 w-full z-50 flex justify-between items-center px-8 py-6 max-w-full bg-stone-50/80 dark:bg-stone-900/80 backdrop-blur-md"
+    style="background: rgb(128, 63, 3);">
+    <div class="text-6xl font-serif tracking-widest text-stone-900 dark:text-stone-50" style="color: white;">Artisan
+      Roaster</div>
+    <!-- Desktop Links -->
+    <div class="hidden md:flex items-center gap-10">
+      <a class="text-stone-900 dark:text-stone-50 font-bold border-b-2 border-stone-800 dark:border-stone-200 pb-1 font-label text-sm uppercase tracking-widest"
+        style="color: white; font-weight: bold;" href="index.html">Home</a>
+      <a class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-opacity duration-300 font-label text-sm uppercase tracking-widest"
+        style="color: white; font-weight: bold;" href="about.html">About</a>
+      <a class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-opacity duration-300 font-label text-sm uppercase tracking-widest"
+        style="color: white; font-weight: bold;" href="menu.html">Menu</a>
+      <a class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-opacity duration-300 font-label text-sm uppercase tracking-widest"
+        style="color: white; font-weight: bold;" href="galery.html">Gallery</a>
+      <a class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-opacity duration-300 font-label text-sm uppercase tracking-widest"
+        style="color: white; font-weight: bold;" href="contact.html">Contact</a>
+    </div>
+
+  </nav>
+
+  <main class="pt-32 pb-24">
+    <!-- Hero Header -->
+    <header class="px-8 max-w-7xl mx-auto mb-16">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+        <div class="max-w-2xl">
+          <span class="font-label text-sm uppercase tracking-[0.2em] text-secondary mb-4 block">Visual Journal</span>
+          <h1 class="text-5xl md:text-7xl font-serif text-primary leading-tight tracking-tight">The Art of the
+            <br />Daily Brew</h1>
+        </div>
+        <p class="text-on-surface-variant max-w-xs font-body text-lg leading-relaxed">
+          A curated collection of moments from our roastery, capturing the warmth of our craft and the soul of our
+          community.
+        </p>
+      </div>
+    </header>
+    <!-- Bento Gallery Grid -->
+    <section class="px-8 max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:auto-rows-[300px]">
+        <!-- Large Feature: Roastery Interior -->
+        <div class="md:col-span-8 md:row-span-2 relative overflow-hidden rounded-xl group bg-surface-container">
+          <img alt="Café Interior"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            data-alt="wide shot of a sun-drenched industrial chic coffee roastery with wooden tables, brass accents, and large windows with morning light"
+            src="https://lh3.googleusercontent.com/gps-cs-s/AHVAweqYJZSZrXL_kf7dcNvbe2TEqA3GjpA19y7humtIBtpkoULiTjnvdENrR-Qh7HyaxYexYGdo0LxeTiiKGVtm8DNnVZnyYawHe12YqBPU0H40hDyLC37rhQ-qrddXMAuYMxQIfJnQ2ZygCZcK=s680-w680-h510-rw" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+            <p class="text-white font-serif text-2xl">Morning Light in the Roastery</p>
+          </div>
+        </div>
+        <!-- Vertical: Pour Over -->
+        <div class="md:col-span-4 md:row-span-2 relative overflow-hidden rounded-xl group bg-surface-container-high">
+          <img alt="Pour Over Coffee"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            data-alt="close-up of hot coffee being poured from a glass carafe into a ceramic mug, steam rising, warm bokeh background"
+            src="https://lh3.googleusercontent.com/p/AF1QipMy_i1M2M2Y0l9nkGqdLtxBBOjS9vMftd-umqw=s680-w680-h510-rw" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+            <p class="text-white font-serif text-2xl">Night look </p>
+          </div>
+        </div>
+        <!-- Horizontal: Pastries -->
+        <div class="md:col-span-6 md:row-span-1 relative overflow-hidden rounded-xl group bg-surface-container">
+          <img alt="Artisan Pastries"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            data-alt="selection of golden flaky croissants and artisan pastries on a rustic wooden board with dramatic side lighting"
+            src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwerbNvkKUqbmeWgA3qyriHvQ2kmAHbnxpI4jT80ti5giZj7yPfPNta9FzMZTVWBOsEMabGTtA96vdWAljDjj8MukJREzMWACUoSqaOk72HtQF-xxEYfsHyRdTNKJEYivLMsdYU3k_WPVk2sV=s680-w680-h510-rw" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+            <p class="text-white font-serif text-xl">Maggi time</p>
+          </div>
+        </div>
+        <!-- Square: Latte Art -->
+        <div class="md:col-span-3 md:row-span-1 relative overflow-hidden rounded-xl group bg-surface-container-low">
+          <img alt="Latte Art"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            data-alt="top down view of perfect latte art in a ceramic cup with a saucer, placed on a dark marble surface"
+            src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwepRxUWtZIJWWubRRmhc7VyxXrKXRtfo9ty8KKlQNdSMMbcFGtd25X4TrfGEAgTufuyQTzk__4hxKU9ro1SPxW_gKd-qMT8gDz1igs2og8VpZJwyI8GOmF3PxdoEUCyXbcjvl-bQ9n6VTLkS=s680-w680-h510-rw" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+            <p class="text-white font-serif text-lg">Menu</p>
+          </div>
+        </div>
+        <!-- Square: Coffee Beans -->
+        <div class="md:col-span-3 md:row-span-1 relative overflow-hidden rounded-xl group bg-surface-container">
+          <img alt="Roasted Beans"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            data-alt="macro shot of roasted dark coffee beans piled high, rich brown tones with oily texture visible under soft light"
+            src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwepVy1cXOHeRHeW1UQiBCmc8YzF89d_gEBbjdFRMm3nGKBne45_USRwt7tzxK0uw8B61ymygGLOJ43TLMIfwpInQBb4DbUHcj372OVuQBAYBGm43cOK_UpvZiu5tR76h2lUwR6FHuoyEqPqc=s680-w680-h510-rw" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+            <p class="text-white font-serif text-lg">Coffee makes a day perfect</p>
+          </div>
+        </div>
+        <!-- Long Feature: Details & Community -->
+        <div
+          class="md:col-span-12 md:row-span-2 relative overflow-hidden rounded-xl group mt-4 bg-surface-container-highest">
+          <div class="absolute inset-0 bg-primary/10 z-10"></div>
+          <img alt="Roastery Atmosphere"
+            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+            data-alt="atmospheric wide shot of a barista working behind a vintage espresso machine with copper details, warm ambient glow and soft blur"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAd_uROLSKy3R8n7iAg2lUUVwKRWkHNNoU-0Rmd_WofYvoV1TH-zra-EuJLx1V7XEFtgBu5fNUnL7xUgD1v5oW3Si8r8jbNoKGVpuj250EfDWlIZAREHjkAzeUMQpLSGH7Ii7kUnERR3jTxOdbDwdivG3PLqO9B7Sqsk7ho5cfrB5NFpIyGqVfBImmtZixfeRWtGpPP1NgLpU_wvp_sifKxtv96AaHiMcgZiIAb1lbljyjNHh842b-3kfAwjhcS7p1aft_uHttbbh1E" />
+          <div class="absolute inset-0 z-20 flex flex-col justify-center items-center text-center p-12">
+            <span class="font-label text-sm uppercase tracking-[0.4em] text-white mb-4">The Craft</span>
+            <h2 class="text-4xl md:text-6xl font-serif text-white max-w-3xl leading-tight">Every bean tells a story of
+              landscape and fire.</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Story Snippet Section -->
+    <section class="mt-32 px-8 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      <div class="relative">
+        <div class="absolute -top-8 -left-8 w-48 h-48 bg-secondary-fixed opacity-20 rounded-full blur-3xl"></div>
+        <img alt="Close up of hands holding coffee" class="rounded-lg relative z-10 w-full aspect-[4/5] object-cover"
+          data-alt="detailed close-up of a person's hands holding a warm ceramic cup of coffee, sweater texture visible, cozy moody lighting"
+          src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwerjAE6ZjgJjwCFsSVeE2FceoeY5ZacjvlVOVCGaBw_gtsmUtOcNumOF_5qJSWPS4iHqry8NyXCrTjMCkN6b82PpI2Ljdvw_o00daNFSkB0bqWjJfC-y91Ff3BMddpcoS9u10c68XgpBG7tL=s680-w680-h510-rw" />
+      </div>
+      <div class="space-y-8">
+        <h3 class="text-4xl font-serif text-primary">Made for the Ritual</h3>
+        <p class="text-on-surface-variant font-body text-lg leading-relaxed">
+          We believe the cafe is more than just a place to drink—it's a sanctuary for conversation, a laboratory for
+          roasting, and a community of those who appreciate the slower moments in life.
+        </p>
+        <div class="flex gap-4">
+          <span
+            class="px-4 py-2 bg-secondary-fixed text-on-secondary-fixed rounded-full font-label text-xs uppercase tracking-widest">Ethically
+            Sourced</span>
+          <span
+            class="px-4 py-2 bg-secondary-fixed text-on-secondary-fixed rounded-full font-label text-xs uppercase tracking-widest">Small
+            Batch</span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer
+    class="bg-stone-100 dark:bg-stone-950 w-full px-8 py-12 flex flex-col md:flex-row justify-between items-center gap-6"
+    style="background: rgb(97, 48, 3);">
+    <div class="flex flex-col items-center md:items-start gap-4">
+      <div class="text-xl font-serif text-stone-900 dark:text-stone-50" style="color: white; font-weight: bold;">Artisan
+        Roaster</div>
+      <p class="text-stone-800 dark:text-stone-200 font-label text-sm tracking-tight"
+        style="color: white; font-weight: bold;">© 2024 Artisan Roaster. Crafted by Crystal &amp; Manisha.</p>
+    </div>
+    <div class="flex gap-8">
+      <a class="text-stone-500 dark:text-stone-400 hover:text-stone-700 dark:hover:text-stone-300 font-label text-sm transition-colors"
+        href="#" style="color: white; font-weight: bold;">Privacy Policy</a>
+      <a class="text-stone-500 dark:text-stone-400 hover:text-stone-700 dark:hover:text-stone-300 font-label text-sm transition-colors"
+        href="#" style="color: white; font-weight: bold;">Terms of Service</a>
+      <a class="text-stone-500 dark:text-stone-400 hover:text-stone-700 dark:hover:text-stone-300 font-label text-sm transition-colors"
+        href="#" style="color: white; font-weight: bold;">WhatsApp Support</a>
+    </div>
+    <div class="flex gap-4">
+      <span class="material-symbols-outlined text-stone-500 cursor-pointer hover:text-stone-900" data-icon="rss_feed"
+        style="color: white; font-weight: bold;">rss_feed</span>
+      <span class="material-symbols-outlined text-stone-500 cursor-pointer hover:text-stone-900"
+        data-icon="alternate_email" style="color: white; font-weight: bold;">alternate_email</span>
+    </div>
+  </footer>
+</body>
+
+</html>

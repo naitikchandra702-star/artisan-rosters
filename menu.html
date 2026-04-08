@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Menu | Artisan Roaster</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error": "#ffffff",
+                        "surface-container-high": "#ebe8e3",
+                        "inverse-on-surface": "#f3f0eb",
+                        "secondary-container": "#fed7ca",
+                        "secondary-fixed": "#ffdbce",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed": "#e5e2e1",
+                        "secondary": "#75584d",
+                        "surface-tint": "#755750",
+                        "tertiary": "#181818",
+                        "on-secondary-fixed-variant": "#5b4137",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "secondary-fixed-dim": "#e4beb2",
+                        "primary-container": "#3f2721",
+                        "on-primary-container": "#af8c84",
+                        "surface-bright": "#fcf9f4",
+                        "surface-variant": "#e5e2dd",
+                        "on-secondary-fixed": "#2b160f",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#1c1c19",
+                        "on-primary-fixed-variant": "#5c403a",
+                        "surface-dim": "#dcdad5",
+                        "surface-container-highest": "#e5e2dd",
+                        "primary-fixed-dim": "#e5beb5",
+                        "primary": "#27130e",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "inverse-primary": "#e5beb5",
+                        "surface-container": "#f0ede9",
+                        "surface": "#fcf9f4",
+                        "inverse-surface": "#31302d",
+                        "on-tertiary-container": "#969494",
+                        "on-background": "#1c1c19",
+                        "on-surface-variant": "#504442",
+                        "surface-container-low": "#f6f3ee",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed": "#1b1b1b",
+                        "on-secondary-container": "#795c51",
+                        "on-primary": "#ffffff",
+                        "tertiary-container": "#2d2d2d",
+                        "on-error-container": "#93000a",
+                        "primary-fixed": "#ffdad2",
+                        "on-primary-fixed": "#2b1611",
+                        "outline": "#827472",
+                        "error-container": "#ffdad6",
+                        "background": "#fcf9f4",
+                        "outline-variant": "#d3c3c0",
+                        "surface-container-lowest": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        .font-serif {
+            font-family: 'Noto Serif', serif;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body class="bg-surface text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+    <!-- TopNavBar -->
+
+    <nav class="fixed top-0 w-full z-50 flex justify-between items-center px-8 py-6 max-w-full bg-stone-50/80 dark:bg-stone-900/80 backdrop-blur-md"
+        style="background: rgb(128, 63, 3);">
+        <div class="text-6xl font-serif tracking-widest text-stone-900 dark:text-stone-50" style="color: white;">Artisan
+            Roaster</div>
+        <!-- Desktop Links -->
+        <div class=" display-sm-block md:flex items-center gap-10">
+            <a class="text-stone-900 dark:text-stone-50 font-bold border-b-2 border-stone-800 dark:border-stone-200 pb-1 font-label text-sm uppercase tracking-widest"
+                style="color: white; font-weight: bold;" href="index.html">Home</a>
+            <a class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-opacity duration-300 font-label text-sm uppercase tracking-widest"
+                style="color: white; font-weight: bold;" href="about.html">About</a>
+            <a class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-opacity duration-300 font-label text-sm uppercase tracking-widest"
+                style="color: white; font-weight: bold;" href="menu.html">Menu</a>
+            <a class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-opacity duration-300 font-label text-sm uppercase tracking-widest"
+                style="color: white; font-weight: bold;" href="galery.html">Gallery</a>
+            <a class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-opacity duration-300 font-label text-sm uppercase tracking-widest"
+                style="color: white; font-weight: bold;" href="contact.html">Contact</a>
+        </div>
+
+    </nav>
+
+    </header>
+    <main class="pt-32 pb-20">
+        <!-- Hero Section / Menu Header -->
+        <section class="px-8 max-w-7xl mx-auto mb-20 text-center">
+            <span
+                class="inline-block px-4 py-1 bg-secondary-fixed text-on-secondary-fixed rounded-full text-sm font-label mb-6">Est.
+                2024</span>
+            <h1 class="text-5xl md:text-7xl font-serif text-primary leading-tight mb-6">Our Curation</h1>
+            <p class="max-w-2xl mx-auto text-on-surface-variant text-lg leading-relaxed font-body">
+                From slow-roasted specialty beans to artisanal tea blends and curated light bites.
+                Every item is prepared with precision and intent.
+            </p>
+        </section>
+        <!-- Menu Navigation (Local Anchor Links) -->
+        <nav class="sticky top-24 z-40 bg-surface-container-low/90 backdrop-blur-sm py-4 mb-16 overflow-x-auto">
+            <div class="flex justify-center min-w-max px-8 space-x-8">
+                <a class="text-on-surface-variant hover:text-primary font-medium tracking-tight border-b-2 border-transparent hover:border-primary pb-1 transition-all"
+                    href="#coffee">The Coffee Bar</a>
+                <a class="text-on-surface-variant hover:text-primary font-medium tracking-tight border-b-2 border-transparent hover:border-primary pb-1 transition-all"
+                    href="#tea">Tea Rituals</a>
+                <a class="text-on-surface-variant hover:text-primary font-medium tracking-tight border-b-2 border-transparent hover:border-primary pb-1 transition-all"
+                    href="#savories">Sandwiches &amp; More</a>
+                <a class="text-on-surface-variant hover:text-primary font-medium tracking-tight border-b-2 border-transparent hover:border-primary pb-1 transition-all"
+                    href="#bites">Light Bites</a>
+            </div>
+        </nav>
+        <!-- Coffee Section -->
+        <section class="px-8 max-w-7xl mx-auto mb-32" id="coffee">
+            <div class="grid md:grid-cols-12 gap-12 items-start">
+                <div class="md:col-span-5 sticky top-48">
+                    <h2 class="text-4xl font-serif text-primary mb-6">The Coffee Bar</h2>
+                    <p class="text-on-surface-variant mb-8 leading-relaxed">Our signature roasts, ethically sourced and
+                        roasted in small batches to preserve complex flavor profiles.</p>
+                    <div class="aspect-[4/5] rounded-xl overflow-hidden bg-surface-container-high relative group">
+                        <img alt="Coffee Service"
+                            class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                            data-alt="dramatic close-up of dark espresso coffee being poured into a ceramic cup with rich crema and soft steam"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeQQk5Kn6feAbfIn72ythxGwRT-y-UATVMzAWjuitv1sUDbr214P_XqYGNPpVofu3x4InAbcBkWZUjnOG1GSm7kRsWiiJAmtZLaEKSWXmun4RiH7kAmpUHPS9L62E7vaVzYV7QiOZcwwyZTTdmFs0FOaqtAj4aK-x0TDEYxuqAD_Ko12QRkGm0ehSPK0mrIy-UzFNHf_lX9QWwkURLZZiElxnO8r6BjpQv8yTmBkN2NOj9Yt5E1VbAr3yCfiwuz_A8knPeXsTIKNMd" />
+                        <div class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors"></div>
+                    </div>
+                </div>
+                <div class="md:col-span-7 space-y-12">
+                    <div class="space-y-8">
+                        <!-- Espresso -->
+                        <div class="group border-b border-outline-variant pb-8 last:border-0">
+                            <div class="flex justify-between items-baseline mb-2">
+                                <h3
+                                    class="text-xl font-serif text-primary group-hover:translate-x-2 transition-transform duration-300">
+                                    Double Shot Espresso</h3>
+                                <span class="text-on-surface-variant font-label">₹180</span>
+                            </div>
+                            <p class="text-sm text-on-surface-variant">Pure concentration. Intense body with notes of
+                                dark chocolate and orange zest.</p>
+                            <div class="mt-4 flex gap-2">
+                                <span
+                                    class="px-3 py-1 bg-secondary-fixed rounded-full text-[10px] uppercase tracking-widest text-on-secondary-fixed">Dark
+                                    Roast</span>
+                                <span
+                                    class="px-3 py-1 bg-secondary-fixed rounded-full text-[10px] uppercase tracking-widest text-on-secondary-fixed">Signature</span>
+                            </div>
+                        </div>
+                        <!-- Cappuccino -->
+                        <div class="group border-b border-outline-variant pb-8 last:border-0">
+                            <div class="flex justify-between items-baseline mb-2">
+                                <h3
+                                    class="text-xl font-serif text-primary group-hover:translate-x-2 transition-transform duration-300">
+                                    Traditional Cappuccino</h3>
+                                <span class="text-on-surface-variant font-label">₹240</span>
+                            </div>
+                            <p class="text-sm text-on-surface-variant">Equal parts espresso, steamed milk, and velvety
+                                foam. Dusted with cocoa.</p>
+                        </div>
+                        <!-- Latte -->
+                        <div class="group border-b border-outline-variant pb-8 last:border-0">
+                            <div class="flex justify-between items-baseline mb-2">
+                                <h3
+                                    class="text-xl font-serif text-primary group-hover:translate-x-2 transition-transform duration-300">
+                                    Silky Caffe Latte</h3>
+                                <span class="text-on-surface-variant font-label">₹260</span>
+                            </div>
+                            <p class="text-sm text-on-surface-variant">Smooth and comforting. Our signature espresso
+                                with extra steamed milk and light foam.</p>
+                        </div>
+                        <!-- Flat White -->
+                        <div class="group border-b border-outline-variant pb-8 last:border-0">
+                            <div class="flex justify-between items-baseline mb-2">
+                                <h3
+                                    class="text-xl font-serif text-primary group-hover:translate-x-2 transition-transform duration-300">
+                                    Artisan Flat White</h3>
+                                <span class="text-on-surface-variant font-label">₹250</span>
+                            </div>
+                            <p class="text-sm text-on-surface-variant">Micro-foamed milk poured over a double ristretto
+                                for a rich, creamy finish.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Tea Section -->
+        <section class="bg-surface-container-low py-24 mb-32" id="tea">
+            <div class="px-8 max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row gap-16 items-center mb-16">
+                    <div class="flex-1 order-2 md:order-1">
+                        <h2 class="text-4xl font-serif text-primary mb-6">Tea Rituals</h2>
+                        <div class="space-y-10">
+                            <div class="flex justify-between gap-8">
+                                <div>
+                                    <h3 class="font-serif text-xl mb-1">Masala Tea</h3>
+                                    <p class="text-sm text-on-surface-variant">Whole milk brewed with hand-crushed
+                                        cardamom, ginger, and cinnamon.</p>
+                                </div>
+                                <span class="font-label">₹25</span>
+                            </div>
+                            <div class="flex justify-between gap-8">
+                                <div>
+                                    <h3 class="font-serif text-xl mb-1">Green Tea</h3>
+                                    <p class="text-sm text-on-surface-variant">Pure, whole-leaf organic green tea from
+                                        the estates of Assam.</p>
+                                </div>
+                                <span class="font-label">₹60</span>
+                            </div>
+                            <div class="flex justify-between gap-8">
+                                <div>
+                                    <h3 class="font-serif text-xl mb-1">Hot Milk</h3>
+                                    <p class="text-sm text-on-surface-variant">A comforting, cremy classic served steaming hot to warm you from the inside out.</p>
+                                </div>
+                                <span class="font-label">₹50</span>
+                            </div>
+                            <div class="flex justify-between gap-8">
+                                <div>
+                                    <h3 class="font-serif text-xl mb-1">Leamon Tea</h3>
+                                    <p class="text-sm text-on-surface-variant">A bright, zesty blend of premium tea and fresh citrus to refresh your spirit.</p>
+                                </div>
+                                <span class="font-label">₹60</span>
+                            </div>
+                            <div class="flex justify-between gap-8">
+                                <div>
+                                    <h3 class="font-serif text-xl mb-1">Bornvita</h3>
+                                    <p class="text-sm text-on-surface-variant">A powerhouse of cocoa and malt served streaming hot to recharge  your energy.</p>
+                                </div>
+                                <span class="font-label">₹60</span>
+                            </div>
+                            <div class="flex justify-between gap-8">
+                                <div>
+                                    <h3 class="font-serif text-xl mb-1">Lemon Iced Tea</h3>
+                                    <p class="text-sm text-on-surface-variant">The ultimate sunshine in a glass to quench your thirst and brighten your day.</p>
+                                </div>
+                                <span class="font-label">₹80</span>
+                            </div>
+                            <div class="flex justify-between gap-8">
+                                <div>
+                                    <h3 class="font-serif text-xl mb-1">Peach Iced Tea</h3>
+                                    <p class="text-sm text-on-surface-variant">A sweet, sun-kissed blend of ripe peach and chilled tea for a perfect summer escape.</p>
+                                </div>
+                                <span class="font-label">₹90</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-1 order-1 md:order-2">
+                        <div class="relative">
+                            <div
+                                class="w-full aspect-square rounded-full overflow-hidden bg-surface-container-high border-8 border-surface">
+                                <img alt="Tea Ceremony" class="w-full h-full object-cover"
+                                    data-alt="overhead shot of a minimalist tea ceremony with a ceramic teapot and white ceramic cup on a natural wood surface"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdjRAmy36OpAt9jwQLxS4HjsRrzkI0TvJoDkVwGMQcuuy5ALFo_ww0J5FEYuQeXdPs3vVd8-MqOmyyyXSRhgxeP-p14H41vOhJK3TKjGhUwZ0jPEjaByWaKeoZ47ZrI3x43yUK8i-KSYG93GbFJ82PLfUcghxErEHpAyXFdHoq56fbhzHGOyIK-EumnIl8k52nX673SbnJzPdw4oGkkHxGUZlt1NOjPi8S9-v6mgXjQl_bxB_BB1tMu4c0v5_gBN012I4soYoXAavW" />
+                            </div>
+                            <div
+                                class="absolute -bottom-4 -left-4 bg-primary p-6 rounded-xl text-on-primary max-w-xs shadow-lg">
+                                <p class="italic font-serif text-lg">"The best tea is steeped in patience."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Savories & Maggi Bento Grid -->
+        <section class="px-8 max-w-7xl mx-auto mb-32" id="savories">
+            <h2 class="text-4xl font-serif text-primary mb-12 text-center">Shakes &amp; Mojito</h2>
+            <div class="grid md:grid-cols-4 md:grid-rows-2 gap-6 h-auto md:h-[600px]">
+                <!-- Sandwiches Card -->
+                <div
+                    class="md:col-span-2 md:row-span-2 bg-surface-container-highest rounded-xl p-8 flex flex-col justify-between group overflow-hidden relative">
+                    <div class="relative z-10">
+                        <h3 class="text-3xl font-serif text-primary mb-4">Shakes</h3>
+                        <div class="space-y-6">
+                            <div class="flex justify-between">
+                                <div>
+                                    <span class="font-bold block">orea shake</span>
+                                    <span class="text-xs text-on-surface-variant">Every sip is a mix of rich chocolately goodness and smooth, frothy sweetness.</span>
+                                </div>
+                                <span>₹100</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <div>
+                                    <span class="font-bold block">Kitkat shake</span>
+                                    <span class="text-xs text-on-surface-variant">Every sip offers a smooth chocolately finish with a satisfying crispy bite in every mouthful.</span>
+                                </div>
+                                <span>₹120</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <div>
+                                    <span class="font-bold block">Nutella shake</span>
+                                    <span class="text-xs text-on-surface-variant">A snooth, decadent treat finished with a luscious chocolate swirl and a hint of nutty goodness in every sip.</span>
+                                </div>
+                                <span>₹140</span>
+                            </div>
+                               <div class="flex justify-between">
+                                <div>
+                                    <span class="font-bold block">Biscoff shake</span>
+                                    <span class="text-xs text-on-surface-variant">Every sip is smooth, decadent, and topped with a crunch of golden lotus biscuit crumbles.</span>
+                                </div>
+                                <span>₹150</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="absolute right-0 bottom-0 opacity-10 group-hover:scale-110 transition-transform duration-700 pointer-events-none translate-x-10 translate-y-10">
+                        <span class="material-symbols-outlined text-[200px]"
+                            data-icon="lunch_dining">lunch_dining</span>
+                    </div>
+                </div>
+                <!-- Maggi Card -->
+                <div class="md:col-span-2 bg-primary text-on-primary rounded-xl p-8 relative overflow-hidden group">
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-serif mb-4 text-secondary-fixed">Mojito</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <span class="block font-medium">Virgin mojito</span>
+                                <span class="text-xs text-on-primary/70">A crisp, non-alcoholic drink made by muddling fresh mint, lime, and sugar together.</span>
+                            </div>
+                            <div class="text-right">₹70</div>
+                            <div>
+                                <span class="block font-medium">Blue lagoon</span>
+                                <span class="text-xs text-on-primary/70">A vibrant, citrusy drink made by mixing blue curacao syrup with fresh lemon juice.</span>
+                            </div>
+                            <div class="text-right">₹90</div>
+                        </div>
+                    </div>
+                    <div class="absolute top-0 right-0 p-4">
+                        <span class="material-symbols-outlined text-secondary-container opacity-20"
+                            data-icon="ramen_dining" style="font-size: 80px;">ramen_dining</span>
+                    </div>
+                </div>
+                <!-- Snacks Card -->
+                <div class="md:col-span-2 bg-surface-container-low rounded-xl p-8 flex items-center justify-between group"
+                    id="bites">
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-serif text-primary mb-2">Snacks &amp; Light Bites</h3>
+                        <p class="text-sm text-on-surface-variant mb-4">The perfect accompaniment to your beverage of
+                            choice.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-surface-container-high rounded-full text-xs font-label">Truffle
+                                Fries</span>
+                            <span class="px-3 py-1 bg-surface-container-high rounded-full text-xs font-label">Garlic
+                                Crostini</span>
+                            <span class="px-3 py-1 bg-surface-container-high rounded-full text-xs font-label">Masala
+                                Peanuts</span>
+                        </div>
+                    </div>
+                    <div class="w-32 aspect-square rounded-lg overflow-hidden bg-white shadow-sm ml-6 flex-shrink-0">
+                        <img alt="Snacks"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all"
+                            data-alt="crispy golden french fries served in a minimalist ceramic bowl with a small dish of truffle aioli"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmHix0DHaMppEYirTQ0P3qmJXo2_QXjpR7d-J2JGDkHW8zUKnMjQIVkQB7ukZy85Sn5pVgl5fiKgB1B8vTIMwwSAeKC1X-BZNH5-YKbwQ3aYLLTnqVypMOWCaX9iRUF5BuUSTYfo4qLWZvUzbUOXJlV6zXDh7t-uBIY4dOVo2D3u-fc_2O20JFdLrwRRSCNtr5hA7GeSXEbiPcfhtNwy33kYsxICDsM0YQBzDIsKTLXqHAaR5f2nwV3qcMVM_WYDkWsLnw-yrxM1m0" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Newsletter / Footer Sign-off -->
+        <section
+            class="px-8 max-w-5xl mx-auto py-24 bg-surface-container rounded-3xl  mb-20 relative overflow-hidden">
+                <div class="relative z-10">
+                        <h3 class="text-3xl font-serif text-primary mb-4">Hot Americano</h3>
+                        <div class="space-y-6">
+                            <div class="flex justify-between">
+                                <div>
+                                    <span class="font-bold block">Americano</span>
+                                    <span class="text-xs text-on-surface-variant">Every sip is a mix of rich chocolately goodness and smooth, frothy sweetness.</span>
+                                </div>
+                                <span>₹60</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <div>
+                                    <span class="font-bold block">Leamon americano</span>
+                                    <span class="text-xs text-on-surface-variant">Every sip offers a smooth chocolately finish with a satisfying crispy bite in every mouthful.</span>
+                                </div>
+                                <span>₹70</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <div>
+                                    <span class="font-bold block">Caremel americano</span>
+                                    <span class="text-xs text-on-surface-variant">A snooth, decadent treat finished with a luscious chocolate swirl and a hint of nutty goodness in every sip.</span>
+                                </div>
+                                <span>₹90</span>
+                            </div>
+                               <div class="flex justify-between">
+                                <div>
+                                    <span class="font-bold block">Honey americano</span>
+                                    <span class="text-xs text-on-surface-variant">Every sip is smooth, decadent, and topped with a crunch of golden lotus biscuit crumbles.</span>
+                                </div>
+                                <span>₹90</span>
+                            </div>
+                        </div>
+                    </div>
+
+            <div class="absolute -bottom-20 -right-20 pointer-events-none opacity-5">
+                <span class="material-symbols-outlined text-[400px]" data-icon="coffee">coffee</span>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="bg-stone-100 dark:bg-stone-950 w-full px-8 py-12 flex flex-col md:flex-row justify-between items-center gap-6"
+        style="background: rgb(97, 48, 3);">
+        <div class="flex flex-col items-center md:items-start gap-4">
+            <div class="text-xl font-serif text-stone-900 dark:text-stone-50" style="color: white; font-weight: bold;">
+                Artisan Roaster</div>
+            <p class="text-stone-800 dark:text-stone-200 font-label text-sm tracking-tight"
+                style="color: white; font-weight: bold;">© 2024 Artisan Roaster. Crafted by Crystal &amp; Manisha.</p>
+        </div>
+        <div class="flex gap-8">
+            <a class="text-stone-500 dark:text-stone-400 hover:text-stone-700 dark:hover:text-stone-300 font-label text-sm transition-colors"
+                href="#" style="color: white; font-weight: bold;">Privacy Policy</a>
+            <a class="text-stone-500 dark:text-stone-400 hover:text-stone-700 dark:hover:text-stone-300 font-label text-sm transition-colors"
+                href="#" style="color: white; font-weight: bold;">Terms of Service</a>
+            <a class="text-stone-500 dark:text-stone-400 hover:text-stone-700 dark:hover:text-stone-300 font-label text-sm transition-colors"
+                href="#" style="color: white; font-weight: bold;">WhatsApp Support</a>
+        </div>
+        <div class="flex gap-4">
+            <span class="material-symbols-outlined text-stone-500 cursor-pointer hover:text-stone-900"
+                data-icon="rss_feed" style="color: white; font-weight: bold;">rss_feed</span>
+            <span class="material-symbols-outlined text-stone-500 cursor-pointer hover:text-stone-900"
+                data-icon="alternate_email" style="color: white; font-weight: bold;">alternate_email</span>
+        </div>
+    </footer>
+</body>
+
+</html>
