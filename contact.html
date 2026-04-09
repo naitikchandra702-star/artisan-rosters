@@ -104,25 +104,50 @@
 
 <body class="bg-surface text-on-surface selection:bg-secondary-container" style="background: rgb(177, 83, 21);">
     <!-- TopNavBar -->
-    <nav class="fixed top-0 w-full z-50 flex justify-between items-center px-8 py-6 max-w-full bg-stone-50/80 dark:bg-stone-900/80 backdrop-blur-md"
-        style="background: rgb(128, 63, 3);">
-        <div class="text-6xl font-serif tracking-widest text-stone-900 dark:text-stone-50" style="color: white;">Artisan
-            Roaster</div>
-        <!-- Desktop Links -->
-        <div class="hidden md:flex items-center gap-10">
-            <a class="text-stone-900 dark:text-stone-50 font-bold border-b-2 border-stone-800 dark:border-stone-200 pb-1 font-label text-sm uppercase tracking-widest"
-                style="color: white; font-weight: bold;" href="index.html">Home</a>
-            <a class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-opacity duration-300 font-label text-sm uppercase tracking-widest"
-                style="color: white; font-weight: bold;" href="about.html">About</a>
-            <a class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-opacity duration-300 font-label text-sm uppercase tracking-widest"
-                style="color: white; font-weight: bold;" href="menu.html">Menu</a>
-            <a class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-opacity duration-300 font-label text-sm uppercase tracking-widest"
-                style="color: white; font-weight: bold;" href="galery.html">Gallery</a>
-            <a class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-opacity duration-300 font-label text-sm uppercase tracking-widest"
-                style="color: white; font-weight: bold;" href="contact.html">Contact</a>
-        </div>
+<!-- NAVBAR -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-[clamp(1rem,4vw,3rem)] py-4 bg-[rgb(128,63,3)] backdrop-blur-md">
 
-    </nav>
+  <!-- LOGO -->
+  <div class="text-white font-serif tracking-widest text-[clamp(1.5rem,4vw,2.5rem)]">
+    Artisan Roaster
+  </div>
+
+  <!-- DESKTOP MENU -->
+  <div class="hidden md:flex items-center gap-8 text-white text-sm uppercase tracking-widest font-bold">
+    <a href="index.html" class="border-b-2 pb-1">Home</a>
+    <a href="about.html" class="hover:opacity-70">About</a>
+    <a href="menu.html" class="hover:opacity-70">Menu</a>
+    <a href="galery.html" class="hover:opacity-70">Gallery</a>
+    <a href="contact.html" class="hover:opacity-70">Contact</a>
+  </div>
+
+  <!-- MOBILE BUTTON -->
+  <button id="menuBtn" class="md:hidden text-white text-3xl">
+    ☰
+  </button>
+
+</nav>
+
+<!-- MOBILE MENU -->
+<div id="mobileMenu" class="hidden fixed top-16 left-0 w-full bg-[rgb(128,63,3)] flex flex-col items-center gap-6 py-6 text-white text-lg uppercase z-40">
+
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="menu.html">Menu</a>
+  <a href="galery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+
+</div>
+
+<!-- SCRIPT -->
+<script>
+  const btn = document.getElementById("menuBtn");
+  const menu = document.getElementById("mobileMenu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+</script>
 
     <main class="pt-32 pb-20 px-4 md:px-8 max-w-7xl mx-auto">
         <!-- Hero Title Section -->
